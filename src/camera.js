@@ -22,7 +22,7 @@ class Camera {
       audio: false,
       video: {
         mandatory: {
-          sourceId: this.id,
+          //sourceId: this.id,
           minWidth: 600,
           maxWidth: 800,
           minAspectRatio: 1.6
