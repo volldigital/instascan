@@ -27,7 +27,7 @@ class Camera {
           maxWidth: 800,
           minAspectRatio: 1.6
         },
-        facingMode: { exact: "environment" },
+        facingMode: "environment",
         optional: []
       }
     };
