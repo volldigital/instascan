@@ -287,7 +287,8 @@ class Scanner extends EventEmitter {
     if (!this._camera) {
       throw new Error('Camera is not defined.');
     }
-
+    
+    console.log('enableScan');
     let stream = await this._camera.start();
     this.video.srcObject = stream;
 
