@@ -27,6 +27,7 @@ class Camera {
           maxWidth: 800,
           minAspectRatio: 1.6
         },
+        facingMode: { exact: "environment" },
         optional: []
       }
     };
@@ -36,7 +37,7 @@ class Camera {
     //     constraints.video.facingMode = "environment";
     // }
 
-    constraints.video.facingMode = "environment"
+    //constraints.video.facingMode = "environment"
 
     this._stream = await Camera._wrapErrors(async () => {
       return await navigator.mediaDevices.getUserMedia(constraints);
